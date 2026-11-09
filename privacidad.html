@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad · Ecoa</title>
+<meta name="description" content="Política de privacidad de Ecoa.">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="index.html"><img src="icon.png" alt="">Ecoa</a>
+  <nav class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="privacidad.html" aria-current="page">Privacidad</a>
+    <a href="condiciones.html">Condiciones</a>
+  </nav>
+</header>
+<main class="wrap doc">
+  <article class="card">
+    <h1>Política de privacidad</h1>
+    <p class="updated">Última actualización: 8 de noviembre de 2026</p>
+
+    <p>Ecoa es una aplicación personal para macOS que graba, transcribe y organiza notas de reuniones. Esta política explica qué datos maneja, dónde se guardan y con quién se comparten.</p>
+
+    <div class="callout"><strong>En pocas palabras:</strong> Ecoa no tiene servidores propios, no usa analíticas ni publicidad y no vende ni comparte tus datos. Todo se guarda en tu Mac o en servicios que tú conectas con tu propia cuenta.</div>
+
+    <h2>1. Datos que Ecoa maneja</h2>
+    <ul>
+      <li><strong>Grabaciones de audio</strong> del sistema y del micrófono, solo cuando tú inicias una grabación.</li>
+      <li><strong>Transcripciones, resúmenes, títulos y carpetas</strong> generados a partir de esas grabaciones.</li>
+      <li><strong>Credenciales</strong>: tu clave de API de Gemini, el acceso a Google Drive y la llave de cifrado, guardadas en el Llavero (Keychain) de macOS.</li>
+      <li><strong>Correo de tu cuenta de Google</strong>, solo para mostrarte con qué cuenta estás conectado.</li>
+    </ul>
+
+    <h2>2. Dónde se guardan</h2>
+    <p>Por defecto, todo se guarda localmente en tu Mac (<code>~/Library/Application Support/Ecoa</code>). Ecoa no envía tus datos a servidores del desarrollador; no existen.</p>
+
+    <h2>3. Servicios de terceros que tú conectas</h2>
+    <ul>
+      <li><strong>Google Gemini API</strong>: cuando pides transcribir, resumir o clasificar una reunión, el audio o el texto se envía a Google usando tu propia clave de API. Google lo procesa según sus <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">condiciones de la API de Gemini</a>.</li>
+      <li><strong>Google Drive</strong>: si conectas tu cuenta, Ecoa sube el audio de reuniones viejas a una carpeta llamada “Ecoa” en tu Drive. Antes de subirlo, lo cifra con AES‑256‑GCM; la llave nunca sale de tu Mac.</li>
+    </ul>
+
+    <h2>4. Uso de datos de Google</h2>
+    <p>Ecoa solicita únicamente el permiso <code>drive.file</code>, que le permite ver y administrar <em>solo los archivos que ella misma crea</em> en tu Google Drive. Ecoa no puede leer, listar ni modificar ningún otro archivo de tu Drive.</p>
+    <p>Los datos obtenidos de las API de Google se usan exclusivamente para guardar, descargar y borrar el audio archivado de tus reuniones dentro de la app. No se transfieren a terceros, no se usan para publicidad y no se usan para entrenar modelos de IA.</p>
+    <p>El uso y la transferencia de información recibida de las API de Google por parte de Ecoa se ajustan a la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de datos del usuario de los servicios de las API de Google</a>, incluidos los requisitos de uso limitado (Limited Use).</p>
+
+    <h2>5. Cómo borrar tus datos</h2>
+    <ul>
+      <li>Borra cualquier reunión desde Ecoa; su audio se mueve a la Papelera y, si estaba archivado, también se borra de tu Drive.</li>
+      <li>Desconecta Google Drive en Ajustes de Ecoa, o revoca el acceso en <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+      <li>Para borrar todo, elimina la carpeta <code>~/Library/Application Support/Ecoa</code> y la carpeta “Ecoa” de tu Drive.</li>
+    </ul>
+
+    <h2>6. Grabar a otras personas</h2>
+    <p>Eres responsable de avisar y obtener el consentimiento de los participantes antes de grabar una reunión, conforme a las leyes que te apliquen.</p>
+
+    <h2>7. Cambios y contacto</h2>
+    <p>Si esta política cambia, se actualizará la fecha de arriba. Para cualquier duda escribe a <a href="mailto:luis.javier.ljal@gmail.com">luis.javier.ljal@gmail.com</a>.</p>
+  </article>
+</main>
+<footer class="wrap">
+  <span>© 2026 Ecoa · Hecha en México para uso personal</span>
+  <nav><a href="privacidad.html">Privacidad</a><a href="condiciones.html">Condiciones</a><a href="mailto:luis.javier.ljal@gmail.com">Contacto</a></nav>
+</footer>
+</body></html>
